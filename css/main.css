@@ -1,80 +1,116 @@
-@charset "UTF-8";
-/* Reset CSS */
-* {
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Estilo para o body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+body > header{
+    background-color: #2f3640;
+    padding: 16px 16px;
+    color: #f5f6fa;
 }
 
-/* Estilo para o header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header h1 {
-    margin: 0;
+header li {
+    display: inline;   
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
 }
 
-/* Estilo para o nav */
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
+header li a {
+    color: #f5f6fa;
     text-decoration: none;
+
 }
 
-/* Estilo para os artigos */
-article {
-    background-color: #fff;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px;
+.container {
+    width: 1366px;
+    margin: 0 auto 0 auto;
 }
 
-article h3 {
-    color: #333;
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-article time {
-    display: block;
-    margin-bottom: 10px;
-    color: #666;
+.articles article img{
+    /* height: 180px; */
+    width: 100%;
 }
 
-article p {
-    color: #666;
+.articles article {
+    width: 30%;
 }
 
-article a {
-    color: #007bff;
+section {
+    padding: 16px 0;
+}
+
+section h2, 
+.articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
     text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
-article a:hover {
+.articles article a:hover{
     text-decoration: underline;
 }
 
-/* Estilo para as classes novosecçao1 e novasecçao2 */
-.novosecçao1 {
-    background-color: #e50808;
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.novaseçao2 {
-    background-color: #e50d0d;
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports{
+    background-color: rgba(0,255,0,0.1)
+}
+
+#sports .articles article a{
+    background-color: rgba(0,255,0,0.8);
+    color: #000;
+}
+
+#economy{
+    background-color: #f8f59f;
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+    color: #000;
+}
+#Cinema{
+    background-color: rgba(240, 146, 240, 0.333);
+}
+#Tecnologia{
+    background-color: rgba(123, 223, 148, 0.333);
+
 }
